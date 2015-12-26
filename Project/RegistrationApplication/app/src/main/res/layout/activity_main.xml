@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+    <include android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/tool_bar"
+    layout="@layout/toolbar"/>
+
+    <com.example.jyothi.registrationapplication.SlidingTableLayout
+        android:background="#2F9531"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tabs"
+        android:elevation="3dp">
+
+    </com.example.jyothi.registrationapplication.SlidingTableLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/pager">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
+

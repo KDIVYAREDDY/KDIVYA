@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="First name"
+        android:textSize="15sp"
+        android:textColor="#698769"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        android:layout_weight="1.5"
+        android:layout_margin="25dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/Lastname"
+        android:layout_alignRight="@id/firstname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:text="Last name"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1.5"
+        android:textSize="15sp"
+        android:background="@drawable/shape" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:gravity="center"
+        android:layout_marginBottom="50sp"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:layout_below="@id/Lastname"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:background="@drawable/shape"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50sp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:layout_below="@id/email"/>
+    <EditText
+        android:id="@+id/cnfpwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Conform Password"
+        android:layout_below="@+id/password"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="submit"
+        android:textColor="#ffffff"
+        android:layout_below="@id/cnfpwd"
+        android:textSize="20dp"
+        android:background="@drawable/shape1"
+        android:layout_margin="20dp"
+        android:gravity="center" />
+</RelativeLayout>
